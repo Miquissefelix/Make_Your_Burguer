@@ -29,6 +29,9 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 #nav #logo-url{
  margin: auto;
