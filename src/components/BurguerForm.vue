@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>component d messagem</p>
+   <Message :msg="msg" v-show="msg"/>
     <div>
         <form id="burguer-form" @submit="createBurguer($event)">
           <div class="input-container">
@@ -43,9 +43,12 @@
 </template>
 
 <script>
+import Message from './Message.vue';
 export default {
 name: 'BurguerForm',
-
+components: {
+    Message
+},
 data(){
     return {
         //dados iniciais do json
@@ -92,9 +95,15 @@ methods:{
     const res = await req.json();
 
     //sucess message
+    this.msg =`Pedido realizado com sucesso!`;
+
+    //clean message after 3 seconds
+    setTimeout(()=>{
+        this.msg = "";
+    },3000)
   
     //clean form
-    this.pao="";
+    this.pao=""; 
     this.carne="";
     this.opcionais = "";
     this.nome = "";
