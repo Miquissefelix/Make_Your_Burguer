@@ -79,16 +79,6 @@
   ],
   "burgers": [
     {
-      "id": "bab4",
-      "nome": "Miquisse",
-      "pao": "Parmesão e Orégano",
-      "carne": "Maminha",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado"
-    },
-    {
       "id": "92cb",
       "nome": "Miquisse jose felix",
       "pao": "Parmesão e Orégano",
@@ -96,7 +86,7 @@
       "opcionais": [
         "Tomate"
       ],
-      "status": "Solicitado"
+      "status": "Em produção"
     },
     {
       "id": "b1e9",
