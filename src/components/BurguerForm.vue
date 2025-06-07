@@ -5,7 +5,7 @@
         <form id="burguer-form" @submit="createBurguer($event)">
           <div class="input-container">
             <label for="name">Nome do cliente:</label>
-            <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+            <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome" required>
           </div>
 
            <div class="input-container">
@@ -78,7 +78,7 @@ methods:{
     e.preventDefault();
 
     const data = {
-        nome: e.target.name.value,
+        nome: this.nome,
         pao: this.pao,
         carne: this.carne,
         opcionais:Array.from(this.opcionais) ,
