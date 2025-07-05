@@ -65,17 +65,49 @@
   },
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "tipo": "Solicitado"
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo": "Em produção"
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "id": "b1e9",
+      "nome": "Miquisse jose felix",
+      "pao": "Parmesão e Orégano",
+      "carne": "Maminha",
+      "opcionais": [
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "b147",
+      "nome": "Gustavo Felix",
+      "pao": "3 Queijos",
+      "carne": "Maminha",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "a4c6",
+      "nome": "Baptista",
+      "pao": "3 Queijos",
+      "carne": "Picanha",
+      "opcionais": [
+        "Salame",
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    }
+  ]
 }

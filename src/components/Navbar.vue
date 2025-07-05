@@ -3,10 +3,9 @@
    
     <div >
       <nav id="nav">
-        <router-link to="/" id="logo-url">
-          <img :src="logo" :alt="alt"  id="logo"/></router-link>
+        <router-link to="/" id="logo-url"><img :src="logo" :alt="alt"  id="logo"/></router-link>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/pedidos">About</RouterLink>
+        <RouterLink to="/pedidos">Pedidos</RouterLink>
       </nav>
     </div>
   </header>
@@ -29,8 +28,8 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
-  z-index: 100;
+  /* position: fixed;
+  z-index: 100; */
   width: 100%;
 }
 #nav #logo-url{
